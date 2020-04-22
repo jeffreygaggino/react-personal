@@ -1,0 +1,21 @@
+header.headerNav {
+    color: var(--about-color);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: var(--accent-color);
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .headerNav__mode, .headerNav__burger {
+        width: 50px;
+    }
+
+    .headerNav__wordmark {
+        font-size: 24px;
+        font-family: "Roboto Slab", Courier;
+        font-weight: bold;
+        color: currentColor;
+    }
+
+}

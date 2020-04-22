@@ -1,0 +1,51 @@
+#mainContent {
+    --pageTheme: var(--body-font);
+
+    .home-title {
+        margin-bottom: 50px;
+        font-weight: bold;
+        font-size: 80px;
+    }
+
+    .home-title span {
+        color: var(--pageTheme);
+
+    }
+    
+    .home-title span:before {
+        content: '<h1>';
+        font-size: 20px;
+        left: -17px;
+        top: -5px;
+    }
+    
+    .home-title span:after {
+        content: '</h1>';
+        font-size: 20px;
+        right: -50px;
+        bottom: 15px;
+    }
+
+    .home-blurb {
+        font-weight: normal;
+        font-size: 24px;
+        color: var(--pageTheme);
+        margin-bottom: 10px;
+        p {
+            margin: 0;
+            line-height: 150%;
+        }
+    }
+
+    .home-subtitle {
+        color: var(--skills-color);
+        font-size: 16px;
+
+        &__svg {
+            display: inline-block;
+            margin-left: 6px;
+            margin-right: 5px;
+        }
+    }
+    
+}
