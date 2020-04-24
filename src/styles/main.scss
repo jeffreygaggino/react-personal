@@ -1,59 +1,51 @@
 @import "./variables.scss";
+@import "./fonts.scss";
+@import "./defaults.scss";
 
-@font-face {
-    font-family: "Caveat";
-    font-weight: normal;
-    src: local("Caveat Regular"),
-         local("Caveat-Regular"),
-         url("fonts/caveat-regular-webfont.woff2");
-  }
-
-  @font-face {
-      font-family: "Roboto Slab";
-      font-weight: bold;
-      src: local("Roboto Slab"),
-      local("Roboto-Slab"),
-      url("fonts/RobotoSlab-Bold.ttf");
-  }
 #mainContent {
-    padding: 0 25px;
+  padding: 0 25px;
+  margin-top: 60px;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
-body {
-    background-color: var(--body-background);
-    margin: 0;
-    line-height: 150%;
+.code > span.codewords {
+  position: relative;
+}
+.code span.codewords:before,
+.code span.codewords:after {
+  content: "";
+  color: var(--code-color);
+  position: absolute;
+  font-family: "Caveat", "Lucida Handwriting", cursive;
+  font-size: 14px;
 }
 
-a {
-    text-decoration: none;
-    color: currentColor;
-    
-}
-.code span {
-    position: relative;
-}
-.code span:before, .code span:after {
-    content: "";
-    color: var(--code-color);
-    position: absolute;
-    font-family: "Caveat", "Lucida Handwriting", cursive;
-}
-
-.bold {
+.punctuation {
+    font-family: "Roboto", "Times New Roman", serif;
     font-weight: bold;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .contact-color {
-    color: var(--contact-color);
+  color: var(--contact-color);
 }
 
 .about-color {
-    color: var(--about-color);
+  color: var(--about-color);
 }
 
-
-
-
-
+.skills-color {
+  color: var(--skills-color);
+}

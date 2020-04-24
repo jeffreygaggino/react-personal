@@ -4,6 +4,8 @@ header.headerNav {
     align-items: center;
     height: 60px;
     background-color: var(--accent-color);
+    transition: background-color 1s ease-in, color 1s ease-out;
+    transition-delay: 0s;
     justify-content: space-between;
     padding: 0 20px;
 

@@ -1,0 +1,37 @@
+#footerNav {
+  max-width: 350px;
+  align-self: center;
+  width: 100%;
+  margin-bottom: 20px;
+  & > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--body-font);
+    list-style-type: none;
+    font-weight: 500;
+    padding: 0 20px;
+    margin: 0;
+
+    li.code {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      & > span {
+        &:before,
+        &:after {
+          text-transform: initial;
+        }
+        &:before {
+          left: -10px;
+          top: -15px;
+          content: "<a>";
+        }
+        &:after {
+          content: "</a>";
+          left: -10px;
+          bottom: -15px;
+        }
+      }
+    }
+  }
+}

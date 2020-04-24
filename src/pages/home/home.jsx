@@ -6,17 +6,21 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
+        <div className="jeffrey-backgroundImage-dark"></div>
+        <div className="jeffrey-backgroundImage-light"></div>
         <h1 className="home-title code">
-          <span>Hello.</span>
+          <span className="codewords">
+            Hello<span className="punctuation">.</span>
+          </span>
         </h1>
         <div className="home-blurb">
           <p>
             I'm <span className="about-color bold">Jeffrey</span>
-            <span className="bold">,</span>
+            <span className="bold punctuation">,</span>
           </p>
           <p>
             a <span className="contact-color bold">Digital Developer</span>
-            <span className="bold">.</span>
+            <span className="bold punctuation">.</span>
           </p>
         </div>
         <div className="home-subtitle">
@@ -32,7 +36,7 @@ class Home extends Component {
               fill="none"
               d="M1 0V15H15"
               stroke="currentColor"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <path
               d="M18 15L13.5 17.5981L13.5 12.4019L18 15Z"

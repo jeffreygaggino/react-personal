@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./footer.scss";
 
 class footer extends Component {
   state = {};
@@ -7,14 +8,20 @@ class footer extends Component {
     return (
       <footer id="footerNav">
         <ul>
-          <li>
-            <a href="mailto:jeffreygaggino@gmail.com">Contact</a>
+          <li className="code contact-color">
+            <span className="codewords">
+              <a href="mailto:jeffreygaggino@gmail.com">Contact</a>
+            </span>
           </li>
-          <li>
-            <Link to="/about">About</Link>
+          <li className="code about-color">
+            <span className="codewords">
+              <Link to="/about">About</Link>
+            </span>
           </li>
-          <li>
-            <Link to="/skills">Expertise</Link>
+          <li className="code skills-color">
+            <span className="codewords">
+              <Link to="/skills">Expertise</Link>
+            </span>
           </li>
         </ul>
       </footer>

@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import "./styles/main.scss";
 import Home from "./pages/home/home";
 import Header from "./components/header/header";
@@ -10,7 +11,7 @@ import Skills from "./pages/skills";
 function App() {
   return (
     <Router>
-      <div>
+      <div id="layout">
         <Header />
         <div id="mainContent">
           <Switch>
