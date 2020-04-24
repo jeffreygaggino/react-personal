@@ -4,7 +4,7 @@
 
 #mainContent {
   padding: 0 25px;
-  margin-top: 60px;
+  margin-top: 4.3rem;
   flex-grow: 1;
   background-repeat: no-repeat;
   position: relative;
@@ -15,7 +15,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 .code > span.codewords {
   position: relative;
@@ -29,9 +28,32 @@
   font-size: 14px;
 }
 
+.title {
+  color: var(--pageTheme);
+  font-size: 3.42rem;
+  line-height: 1.1;
+  margin: 0;
+  position: relative;
+  &> span.codewords {
+    &:before {
+      content: "<h1>";
+      font-size: 20px;
+      left: -15px;
+      top: -10px;
+    }
+    &:after {
+      content: "</h1>";
+      font-size: 20px;
+      bottom: 10px;
+    }
+  }
+}
+
+
+
 .punctuation {
-    font-family: "Roboto", "Times New Roman", serif;
-    font-weight: bold;
+  font-family: "Roboto", "Times New Roman", serif;
+  font-weight: bold;
 }
 
 .bold {

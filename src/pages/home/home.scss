@@ -1,5 +1,6 @@
 body {
-  .jeffrey-backgroundImage-dark, .jeffrey-backgroundImage-light {
+  .jeffrey-backgroundImage-dark,
+  .jeffrey-backgroundImage-light {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -41,51 +42,53 @@ body {
     }
   }
   #mainContent {
-    --pageTheme: var(--body-font);
-    .home-title {
-      margin-top: 10px;
-      margin-bottom: 30px;
-      font-weight: bold;
-      font-size: 5.7rem;
-      line-height: 1;
+      #home {
+      --pageTheme: var(--body-font);
+      .home-title {
+        margin-top: 10px;
+        margin-bottom: 2.14rem;
+        font-weight: bold;
+        font-size: 5.7rem;
+        line-height: 1;
 
-      & > span {
+        & > span {
+          color: var(--pageTheme);
+
+          &:before {
+            content: "<h1>";
+            font-size: 20px;
+            left: -17px;
+            top: -5px;
+          }
+          &:after {
+            content: "</h1>";
+            font-size: 20px;
+            right: -50px;
+            bottom: 25px;
+          }
+        }
+      }
+
+      .home-blurb {
+        font-weight: normal;
+        font-size: 1.7rem;
         color: var(--pageTheme);
-
-        &:before {
-          content: "<h1>";
-          font-size: 20px;
-          left: -17px;
-          top: -5px;
-        }
-        &:after {
-          content: "</h1>";
-          font-size: 20px;
-          right: -50px;
-          bottom: 25px;
+        margin-bottom: 0.7rem;
+        p {
+          margin: 0;
+          line-height: 150%;
         }
       }
-    }
 
-    .home-blurb {
-      font-weight: normal;
-      font-size: 1.7rem;
-      color: var(--pageTheme);
-      margin-bottom: 10px;
-      p {
-        margin: 0;
-        line-height: 150%;
-      }
-    }
+      .home-subtitle {
+        color: var(--skills-color);
+        font-size: 1.2rem;
 
-    .home-subtitle {
-      color: var(--skills-color);
-      font-size: 1.2rem;
-
-      &__svg {
-        display: inline-block;
-        margin-left: 6px;
-        margin-right: 5px;
+        &__svg {
+          display: inline-block;
+          margin-left: 6px;
+          margin-right: 5px;
+        }
       }
     }
   }

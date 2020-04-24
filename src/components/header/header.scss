@@ -18,6 +18,10 @@ header.headerNav {
         font-family: "Roboto Slab", Courier;
         font-weight: bold;
         color: currentColor;
+
+        .punctuation {
+            color: var(--contact-color);
+        }
     }
 
 }

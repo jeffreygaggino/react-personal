@@ -1,0 +1,16 @@
+#mainContent {
+    #skills {
+    --pageTheme: var(--skills-color);
+
+    .title {
+        &> span.codewords {
+          &:after {
+            content: "</h1>";
+            font-size: 20px;
+            bottom: -40px;
+            right: -145px;
+          }
+        }
+      }
+    }
+}

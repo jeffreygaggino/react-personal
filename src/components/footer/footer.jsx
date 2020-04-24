@@ -15,7 +15,7 @@ class footer extends Component {
           </li>
           <li className="code about-color">
             <span className="codewords">
-              <Link to="/about">About</Link>
+              <Link to="/about">Who Am I?</Link>
             </span>
           </li>
           <li className="code skills-color">

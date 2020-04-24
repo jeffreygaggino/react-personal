@@ -5,8 +5,8 @@ import "./styles/main.scss";
 import Home from "./pages/home/home";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
-import About from "./pages/about";
-import Skills from "./pages/skills";
+import About from "./pages/about/about";
+import Skills from "./pages/skills/skills";
 
 function App() {
   return (

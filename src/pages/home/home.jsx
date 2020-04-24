@@ -5,7 +5,7 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
+      <div id="home">
         <div className="jeffrey-backgroundImage-dark"></div>
         <div className="jeffrey-backgroundImage-light"></div>
         <h1 className="home-title code">
@@ -45,7 +45,7 @@ class Home extends Component {
           </svg>
           Front End, Email & Design
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
