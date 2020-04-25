@@ -6,6 +6,8 @@ class Skills extends Component {
   render() {
     return (
       <div id="skills">
+        <div className="skills-backgroundImage-dark"></div>
+        <div className="skills-backgroundImage-light"></div>
         <h1 className="title code">
           <span className="codewords">
             Skills & <br /> Expertise

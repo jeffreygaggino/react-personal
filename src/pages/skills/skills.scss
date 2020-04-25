@@ -1,31 +1,83 @@
-#mainContent {
-    #skills {
-    --pageTheme: var(--skills-color);
+body {
+    .skills-backgroundImage-dark,
+    .skills-backgroundImage-light {
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &.dark {
+      .skills-backgroundImage-dark {
+        opacity: 1;
+        z-index: -1;
+        background-image: url("../backgrounds/skill-sketch.svg");
+        background-position: 100% 50%;
+        background-size: calc(41vh - 130px);
+        transition: opacity 1.5s ease-in-out;
+        @media (max-width: 360px){
+            background-position: 100% 90%;
+            background-size: calc(51vh - 120px);
+        }
+      }
+      .skills-backgroundImage-light {
+        opacity: 0;
+        transition-delay: 5s;
+        transition: opacity 1.5s ease-in-out;
+        z-index: -2;
+      }
+    }
 
+    &.light {
+      .skills-backgroundImage-dark {
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+        transition-delay: 5s;
+        z-index: -2;
+      }
+      .skills-backgroundImage-light {
+        opacity: 1;
+        z-index: -1;
+        background-image: url("../backgrounds/skills-full.svg");
+        background-position: 100% 50%;
+        background-size: calc(41vh - 130px);
+        transition: opacity 1s ease-in-out;
+
+        @media (max-width: 360px){
+            background-position: 100% 90%;
+            background-size: calc(51vh - 120px);
+        }
+      }
+    }
+}
+#mainContent {
+  #skills {
+    --pageTheme: var(--skills-color);
     .title {
-        &> span.codewords {
-          &:after {
-            content: "</h1>";
-            font-size: 20px;
-            bottom: -40px;
-            right: -100px;
-            @media (max-width: 360px) {
-                bottom: -33px;
-                right: -99px;
-            }
+      & > span.codewords {
+        &:after {
+          content: "</h1>";
+          font-size: 20px;
+          bottom: -40px;
+          right: -100px;
+          @media (max-width: 360px) {
+            bottom: -33px;
+            right: -99px;
           }
         }
       }
-      .skills__blurb {
-        color: var(--blurb-font);
-        font-family: "Roboto Slab", "Courier New", Courier, monospace;
-        font-weight: normal;
-        font-size: 1.14rem;
-        line-height: 1.5;
-        min-width: 200px;
-        width: 90%;
-        max-width: 275px;
-        margin-bottom: 3.5rem;
-      }
     }
+    .skills__blurb {
+      color: var(--blurb-font);
+      font-family: "Roboto Slab", "Courier New", Courier, monospace;
+      font-weight: normal;
+      font-size: 1.14rem;
+      line-height: 1.5;
+      min-width: 200px;
+      width: 90%;
+      max-width: 275px;
+      margin-bottom: 3.5rem;
+    }
+  }
 }
