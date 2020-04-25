@@ -1,0 +1,103 @@
+
+.burger {
+    --smallwidth: 8px;
+    --speed: 0.4s;
+    --delay: 0.3s;
+    --othertransition: opacity calc(var(--speed)) ease-in, width calc(var(--speed)/2) ease-in;
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .burger__child {
+        height: 4px;
+        width: 100%;
+        background-color: var(--about-color);
+        border-radius: 10px;
+        opacity: 1;
+    }
+    & > .burger__line-1 {
+        width: 29px;
+        align-self: end;
+        transform-origin: -3px 6px;
+        transition: all var(--speed) ease-in-out;
+
+    }
+    .burger__line-2 {
+        width: var(--smallwidth);
+        align-self: end;
+        transition: var(--othertransition);
+        transition-delay: var(--delay);
+    }
+    .burger__group {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &> .burger__child {
+            width: var(--smallwidth);
+        }
+    }
+
+    .burger__line-3 {
+        transition: all .2s ease-out;
+        transition-delay: var(--delay);
+    }
+
+    .burger__line-4 {
+        transition: var(--othertransition);
+        transition-delay: var(--delay);
+    }
+    .burger__line-5 {
+        width: 23px;
+        align-self: center;
+        transform-origin: 34px 12px;
+        transition: all var(--speed) ease-in-out;
+    }
+
+    &.open {
+        &>.burger__line-1 {
+            width: 120%;
+            transform: rotate(45deg) translateX(3px) translateY(-9px);
+            transition: all var(--speed) ease-in-out;
+            transition-delay: var(--delay);
+        }
+        .burger__line-4,.burger__line-2 {
+            opacity: 0;
+            width: 100%;
+            transition: var(--othertransition);
+        }
+
+        .burger__line-3 {
+            width: 0;
+            opacity: 0;
+            transition: var(--othertransition);
+        }
+        &>.burger__line-5 {
+            width: 120%;
+            transform: rotate(-45deg) translateX(20px) translateY(-15px);
+            transition: all var(--speed) ease-in-out;
+            transition-delay: var(--delay);
+        }
+
+    }
+}
+
+.burger-overlay {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+    transition: all .25s ease-in;
+
+    &.open {
+        opacity: 1;
+        transition: all .3s ease-out;
+        pointer-events: all;
+    }
+}

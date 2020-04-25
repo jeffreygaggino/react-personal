@@ -1,19 +1,21 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./header.scss";
+import ModeSwitch from "../modeswitch/modeswitch";
+import Burger from "../burger/burger";
 
 class header extends Component {
   state = {};
   render() {
     return (
       <header className="headerNav">
-        <div className="headerNav__mode">Moon</div>
+        <ModeSwitch />
         <div className="headerNav__wordmark">
           <Link to="/">
             J<span className="punctuation">.</span>Gaggino
           </Link>
         </div>
-        <div className="headerNav__burger">J</div>
+        <Burger />
       </header>
     );
   }

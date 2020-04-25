@@ -8,6 +8,7 @@ header.headerNav {
     transition-delay: 0s;
     justify-content: space-between;
     padding: 0 20px;
+    z-index: 2;
 
     .headerNav__mode, .headerNav__burger {
         width: 50px;

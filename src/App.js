@@ -8,28 +8,30 @@ import Footer from "./components/footer/footer";
 import About from "./pages/about/about";
 import Skills from "./pages/skills/skills";
 
-function App() {
-  return (
-    <Router>
-      <div id="layout">
-        <Header />
-        <div id="mainContent">
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/skills">
-              <Skills />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div id="layout">
+          <Header />
+          <div id="mainContent">
+            <Switch>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/skills">
+                <Skills />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </Router>
-  );
+      </Router>
+    );
+  }
 }
 
 export default App;
