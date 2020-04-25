@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./home.scss";
+import Homearrow from "./homearrow";
 
 class Home extends Component {
   state = {};
@@ -24,25 +25,7 @@ class Home extends Component {
           </p>
         </div>
         <div className="home__subtitle">
-          <svg
-            className="home__subtitle__svg"
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-            fill=""
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="none"
-              d="M1 0V15H15"
-              stroke="currentColor"
-              strokeWidth="2"
-            />
-            <path
-              d="M18 15L13.5 17.5981L13.5 12.4019L18 15Z"
-              fill="currentColor"
-            />
-          </svg>
+          <Homearrow />
           Front End, Email & Design
         </div>
       </div>
