@@ -8,12 +8,12 @@ class Home extends Component {
       <div id="home">
         <div className="jeffrey-backgroundImage-dark"></div>
         <div className="jeffrey-backgroundImage-light"></div>
-        <h1 className="home-title code">
+        <h1 className="home__title code">
           <span className="codewords">
             Hello<span className="punctuation">.</span>
           </span>
         </h1>
-        <div className="home-blurb">
+        <div className="home__blurb">
           <p>
             I'm <span className="about-color bold">Jeffrey</span>
             <span className="bold punctuation">,</span>
@@ -23,9 +23,9 @@ class Home extends Component {
             <span className="bold punctuation">.</span>
           </p>
         </div>
-        <div className="home-subtitle">
+        <div className="home__subtitle">
           <svg
-            className="home-subtitle__svg"
+            className="home__subtitle__svg"
             width="18"
             height="18"
             viewBox="0 0 18 18"

@@ -1,11 +1,19 @@
 #mainContent {
-    #about {
-        --pageTheme: var(--about-color);
-        .title {
-            span.codewords {
-                
-            }
-        }
+  #about {
+    --pageTheme: var(--about-color);
+    .title {
     }
 
+    .about__blurb {
+      color: var(--blurb-font);
+      font-family: "Roboto Slab", "Courier New", Courier, monospace;
+      font-weight: normal;
+      font-size: 1.14rem;
+      line-height: 1.5;
+      min-width: 200px;
+      width: 90%;
+      max-width: 275px;
+      margin-bottom: 3.5rem;
+    }
+  }
 }

@@ -8,9 +8,24 @@
             content: "</h1>";
             font-size: 20px;
             bottom: -40px;
-            right: -145px;
+            right: -100px;
+            @media (max-width: 360px) {
+                bottom: -33px;
+                right: -99px;
+            }
           }
         }
+      }
+      .skills__blurb {
+        color: var(--blurb-font);
+        font-family: "Roboto Slab", "Courier New", Courier, monospace;
+        font-weight: normal;
+        font-size: 1.14rem;
+        line-height: 1.5;
+        min-width: 200px;
+        width: 90%;
+        max-width: 275px;
+        margin-bottom: 3.5rem;
       }
     }
 }

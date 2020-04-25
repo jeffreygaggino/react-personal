@@ -44,7 +44,7 @@ body {
   #mainContent {
       #home {
       --pageTheme: var(--body-font);
-      .home-title {
+      .home__title {
         margin-top: 10px;
         margin-bottom: 2.14rem;
         font-weight: bold;
@@ -69,18 +69,18 @@ body {
         }
       }
 
-      .home-blurb {
+      .home__blurb {
         font-weight: normal;
         font-size: 1.7rem;
         color: var(--pageTheme);
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.2rem;
         p {
           margin: 0;
           line-height: 150%;
         }
       }
 
-      .home-subtitle {
+      .home__subtitle {
         color: var(--skills-color);
         font-size: 1.2rem;
 

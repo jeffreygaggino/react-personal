@@ -11,6 +11,12 @@
     src: local("Roboto Slab"), local("Roboto-Slab"),
       url("fonts/RobotoSlab-Bold.ttf");
   }
+  @font-face {
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    src: local("Roboto Slab"), local("Roboto-Slab"),
+      url("fonts/RobotoSlab-Regular.ttf");
+  }
   
   @font-face {
       font-family: "Poppins";

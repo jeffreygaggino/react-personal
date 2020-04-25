@@ -8,9 +8,29 @@ class Skills extends Component {
       <div id="skills">
         <h1 className="title code">
           <span className="codewords">
-            Skills & <br /> Experience
+            Skills & <br /> Expertise
           </span>
         </h1>
+        <div className="skills__blurb">
+          <p>
+            I primarily use day to day in my development HTML, CSS, JS with
+            supporting frameworks of React and Vue.
+          </p>
+          <p>
+            You can visit my LinkedIn down below for more details or just
+            contact me.
+          </p>
+        </div>
+        <div className="skills__button code">
+          <a
+            href="https://www.linkedin.com/in/jeffreygaggino/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="box-button codewords"
+          >
+            <span className="">LINKEDIN</span>
+          </a>
+        </div>
       </div>
     );
   }

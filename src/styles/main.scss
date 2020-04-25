@@ -16,11 +16,11 @@
   justify-content: space-between;
 }
 
-.code > span.codewords {
+.code > .codewords {
   position: relative;
 }
-.code span.codewords:before,
-.code span.codewords:after {
+.code .codewords:before,
+.code .codewords:after {
   content: "";
   color: var(--code-color);
   position: absolute;
@@ -32,9 +32,9 @@
   color: var(--pageTheme);
   font-size: 3.42rem;
   line-height: 1.1;
-  margin: 0;
+  margin: 0 0 2.4rem 0;
   position: relative;
-  &> span.codewords {
+  & span.codewords {
     &:before {
       content: "<h1>";
       font-size: 20px;
@@ -48,7 +48,33 @@
     }
   }
 }
+.code {
+  a.box-button.codewords {
+    border: 2px solid var(--pageTheme);
+    color: var(--pageTheme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.42rem;
+    width: 14.3rem;
+    height: 3.72rem;
+    letter-spacing: 1px;
+    position: relative;
 
+      &:before {
+        content: "<button>";
+        font-size: 20px;
+        left: -20px;
+        top: -2rem;
+      }
+      &:after {
+        content: "</button>";
+        font-size: 20px;
+        left: -20px;
+        bottom: -2rem;
+      }
+  }
+}
 
 
 .punctuation {
