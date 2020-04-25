@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./about.scss";
+import JeffreyInteractive from "../backgrounds/jeffreyinteractive/jeffreyinteractive";
 
 class About extends Component {
   state = {};
   render() {
     return (
       <div id="about">
-        <div className="jeffrey-backgroundImage-dark"></div>
-        <div className="jeffrey-backgroundImage-light"></div>
+        <JeffreyInteractive />
         <h1 className="title code">
           <span className="codewords">Who Am I?</span>
         </h1>

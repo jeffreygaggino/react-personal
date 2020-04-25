@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./home.scss";
 import Homearrow from "./homearrow";
+import JeffreyInteractive from "../backgrounds/jeffreyinteractive/jeffreyinteractive";
 
 class Home extends Component {
   state = {};
   render() {
     return (
       <div id="home">
-        <div className="jeffrey-backgroundImage-dark"></div>
-        <div className="jeffrey-backgroundImage-light"></div>
+        <JeffreyInteractive />
         <h1 className="home__title code">
           <span className="codewords">
             Hello<span className="punctuation">.</span>
