@@ -1,55 +1,55 @@
 body {
-    .skills-backgroundImage-dark,
+  .skills-backgroundImage-dark,
+  .skills-backgroundImage-light {
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &.dark {
+    .skills-backgroundImage-dark {
+      opacity: 1;
+      z-index: -1;
+      background-image: url("../backgrounds/skill-sketch.svg");
+      background-position: 100% 50%;
+      background-size: calc(41vh - 130px);
+      transition: opacity 1.5s ease-in-out;
+      @media (max-width: 360px) {
+        background-position: 100% 90%;
+        background-size: calc(51vh - 120px);
+      }
+    }
     .skills-backgroundImage-light {
-      background-repeat: no-repeat;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
+      opacity: 0;
+      transition-delay: 5s;
+      transition: opacity 1.5s ease-in-out;
+      z-index: -2;
     }
-    &.dark {
-      .skills-backgroundImage-dark {
-        opacity: 1;
-        z-index: -1;
-        background-image: url("../backgrounds/skill-sketch.svg");
-        background-position: 100% 50%;
-        background-size: calc(41vh - 130px);
-        transition: opacity 1.5s ease-in-out;
-        @media (max-width: 360px){
-            background-position: 100% 90%;
-            background-size: calc(51vh - 120px);
-        }
-      }
-      .skills-backgroundImage-light {
-        opacity: 0;
-        transition-delay: 5s;
-        transition: opacity 1.5s ease-in-out;
-        z-index: -2;
-      }
-    }
+  }
 
-    &.light {
-      .skills-backgroundImage-dark {
-        opacity: 0;
-        transition: opacity 1.5s ease-in-out;
-        transition-delay: 5s;
-        z-index: -2;
-      }
-      .skills-backgroundImage-light {
-        opacity: 1;
-        z-index: -1;
-        background-image: url("../backgrounds/skills-full.svg");
-        background-position: 100% 50%;
-        background-size: calc(41vh - 130px);
-        transition: opacity 1s ease-in-out;
+  &.light {
+    .skills-backgroundImage-dark {
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      transition-delay: 5s;
+      z-index: -2;
+    }
+    .skills-backgroundImage-light {
+      opacity: 1;
+      z-index: -1;
+      background-image: url("../backgrounds/skills-full.svg");
+      background-position: 100% 50%;
+      background-size: calc(41vh - 130px);
+      transition: opacity 1s ease-in-out;
 
-        @media (max-width: 360px){
-            background-position: 100% 90%;
-            background-size: calc(51vh - 120px);
-        }
+      @media (max-width: 360px) {
+        background-position: 100% 90%;
+        background-size: calc(51vh - 120px);
       }
     }
+  }
 }
 #mainContent {
   #skills {
