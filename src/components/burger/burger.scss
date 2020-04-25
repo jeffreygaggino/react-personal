@@ -97,7 +97,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-delay: 1s;
+    transition-delay: .5s;
 
     &.open {
         opacity: 1;
@@ -106,41 +106,18 @@
 
         &>.burger-overlay__nav {
 
-            a:first-child {
-                transition-delay: 0s;
-            }
-            a:nth-child(2) {
-                transition-delay: 0.25s;
-            }
-            a:nth-child(3) {
-                transition-delay: 0.5s;
-            }
-            a:nth-child(4) {
-                transition-delay: 0.75s;
-            }
 
             
             .nav-item {
                 opacity: 1;
                 transition: opacity .4s ease-in;
+                transition-delay: .5s;
             }
         }
 
     }
 
     .burger-overlay__nav {
-        a:first-child {
-            transition-delay: 0.6s;
-        }
-        a:nth-child(2) {
-            transition-delay: 0.4s;
-        }
-        a:nth-child(3) {
-            transition-delay: 0.2s;
-        }
-        a:nth-child(4) {
-            transition-delay: 0s;
-        }
         .nav-item {
             font-size: 3em;
             font-weight: bold;
@@ -152,8 +129,6 @@
             color: var(--body-font);
             opacity: 0;
             transition: opacity .4s ease-in;
-
-
             
         }
     }
