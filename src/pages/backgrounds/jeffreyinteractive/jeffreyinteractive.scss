@@ -10,7 +10,7 @@ body {
     transition: opacity 1s ease-in-out;
 
     > svg path {
-        transition: fill-opacity 1s ease-in-out, opacity 1s ease-out, stroke-width 0.5s ease-in-out, stroke-color 1s ease-out;
+        transition: fill-opacity 1s ease-in-out, opacity 1s ease-out, stroke-width 0.25s ease-in-out, stroke-color 1s ease-out;
     }
 
 
