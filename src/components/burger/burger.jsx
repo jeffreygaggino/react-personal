@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./burger.scss";
 import { Link } from "react-router-dom";
 
 class Burger extends Component {

@@ -14,6 +14,12 @@
       width: 90%;
       max-width: 275px;
       margin-bottom: 3.5rem;
+      @include tablet {
+        max-width: 320px;
+      }
+      @include desktop {
+        max-width: 600px;
+      }
     }
   }
 }

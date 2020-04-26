@@ -1,0 +1,16 @@
+// Modules
+@import "./modules/variables.scss";
+@import "./modules/fonts.scss";
+@import "./modules/defaults.scss";
+@import "./modules/main.scss";
+
+// Pages
+@import "./pages/home.scss";
+@import "./pages/about.scss";
+@import "./pages/skills.scss";
+
+// components
+@import "./components/burger.scss";
+@import "./components/footer.scss";
+@import "./components/header.scss";
+@import "./components/backgroundinteractive.scss";
