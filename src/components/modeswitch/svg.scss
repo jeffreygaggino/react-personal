@@ -7,6 +7,7 @@ body.dark {
     }
     div.moon {
       background-color: #364964;
+      border: 2px solid #364964;
     }
   }
 }
@@ -14,14 +15,13 @@ body.dark {
 body.light {
   div.sun {
     background-color: #ffc063;
-    right: 6px;
-    top: 6px;
+    right: 6.3px;
+    top: 5.7px;
   }
   div.moon {
-    background-color: transparent;
-    border: 4px dashed #ffc063;
-    width: 35px;
-    height: 35px;
+    border: 2px solid #ffc063;
+    width: 34px;
+    height: 34px;
   }
 }
 .modeicon {
