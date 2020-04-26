@@ -80,11 +80,14 @@ body {
       stroke: #102a44;
       stroke-width: 4;
       stroke-opacity: 1;
-
-      &.rightearhole,
-      &.leftearhole {
+    }
+    #jeffrey-interactive path{
+      &.rightearhole, &.leftearhole, &.mouth{
         stroke: none;
         stroke-width: 0;
+      }
+      &.mouth {
+        fill: #102a44;
       }
     }
   }
