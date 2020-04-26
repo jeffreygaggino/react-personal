@@ -1,0 +1,50 @@
+body.dark {
+  .modeicon {
+    div.sun {
+      background-color: #102a44;
+      right: 0;
+      top: 0;
+    }
+    div.moon {
+      background-color: #364964;
+    }
+  }
+}
+
+body.light {
+  div.sun {
+    background-color: #ffc063;
+    right: 6px;
+    top: 6px;
+  }
+  div.moon {
+    background-color: transparent;
+    border: 4px dashed #ffc063;
+    width: 35px;
+    height: 35px;
+  }
+}
+.modeicon {
+  width: 35px;
+  position: relative;
+  height: 35px;
+  div.sun {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+    transform-origin: center center;
+    box-sizing: border-box;
+  }
+  div.moon {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    transform-origin: center center;
+    transition-delay: 0.5s;
+    box-sizing: border-box;
+  }
+}

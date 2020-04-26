@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import ModeIcon from "./ModeIcon";
+import "./svg.scss";
 class modeswitch extends Component {
   state = {
     dark: true,
@@ -36,7 +38,7 @@ class modeswitch extends Component {
   render() {
     return (
       <div onClick={this.renderMode} className="headerNav__mode">
-        {this.state.dark ? "Dark" : "Light"}
+        <ModeIcon />
       </div>
     );
   }
