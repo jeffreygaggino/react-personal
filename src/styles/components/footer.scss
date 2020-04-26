@@ -36,18 +36,19 @@
           left: -10px;
           bottom: -15px;
         }
-
-        .contact-color:hover {
-          border-bottom: 2px solid var(--contact-color);
-          transition: border .25s ease-in-out;
-        }
-        .skills-color:hover {
-          border-bottom: 2px solid var(--skills-color);
-          transition: border .25s ease-in-out;
-        }
-        .about-color:hover {
-          border-bottom: 2px solid var(--about-color);
-          transition: border .25s ease-in-out;
+        @include desktop {
+          .contact-color:hover {
+            border-bottom: 2px solid var(--contact-color);
+            transition: border .25s ease-in-out;
+          }
+          .skills-color:hover {
+            border-bottom: 2px solid var(--skills-color);
+            transition: border .25s ease-in-out;
+          }
+          .about-color:hover {
+            border-bottom: 2px solid var(--about-color);
+            transition: border .25s ease-in-out;
+          }
         }
       }
     }

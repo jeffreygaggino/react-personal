@@ -10,17 +10,19 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    &:hover {
-        .burger__line-1, .burger__line-2, .burger__group > .burger__line-4, .burger__line-5 {
-            border-radius: 0 !important;
-            width: 100%;
-            transition: all .4s ease-in-out;
-        }
-
-        .burger__group > .burger__line-3{
-            width: 0;
-            border-radius: 0 !important;
-            transition: all .4s ease-in-out;
+    @include desktop {
+        &:hover {
+            .burger__line-1, .burger__line-2, .burger__group > .burger__line-4, .burger__line-5 {
+                border-radius: 0 !important;
+                width: 100%;
+                transition: all .4s ease-in-out;
+            }
+    
+            .burger__group > .burger__line-3{
+                width: 0;
+                border-radius: 0 !important;
+                transition: all .4s ease-in-out;
+            }
         }
     }
     
@@ -145,10 +147,12 @@
             color: var(--body-font);
             opacity: 0;
             transition: opacity .3s ease-in;
-            &:hover {
-                color: var(--contact-color);
-                font-size: 3.1rem;
-                transition: color .25s ease-in-out, font-size .25s ease-in-out;
+            @include desktop {
+                &:hover {
+                    color: var(--contact-color);
+                    font-size: 3.1rem;
+                    transition: color .25s ease-in-out, font-size .25s ease-in-out;
+                }
             }
         }
     }

@@ -87,11 +87,13 @@
     max-height: 62px;
     max-width: 250px;
     transition: background-color .5s ease-in-out, color .5s ease-in-out, font-size .5s ease-in-out;
-&:hover {
-  background-color: var(--pageTheme);
-  color: var(--hover-color);
-  font-size: 1.6rem;
-}
+    @include desktop {
+      &:hover {
+        background-color: var(--pageTheme);
+        color: var(--hover-color);
+        font-size: 1.6rem;
+      }
+    }
       &:before {
         content: "<button>";
         font-size: 20px;

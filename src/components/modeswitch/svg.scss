@@ -1,23 +1,36 @@
-body.dark, body.light .modeicon:hover {
+@mixin desktop {
+  @media (min-width: 1200px) {
+      @content;
+  }
+}
+body.dark {
+  div.sun {
+    background-color: #102a44;
+    right: 0;
+    top: 0;
+  }
+  div.moon {
+    background-color: #364964;
+    border: 2px solid #364964;
+  }
+}
+
+body.light .modeicon:hover {
+  @include desktop {
+    transition-delay: 0.5s;
     div.sun {
-      background-color: #102a44;
+      background-color: #f2f2f2;
       right: 0;
       top: 0;
     }
     div.moon {
       background-color: #364964;
       border: 2px solid #364964;
+    }
   }
 }
 
-body.light .modeicon:hover {
-  transition-delay: .5s;
-  div.sun {
-    background-color: #f2f2f2;
-  }
-}
-
-body.light, body.dark .modeicon:hover {
+body.light{
   div.sun {
     background-color: #ffc063;
     right: 6.3px;
@@ -31,8 +44,21 @@ body.light, body.dark .modeicon:hover {
 }
 
 body.dark .modeicon:hover {
-  transition-delay: .5s;
+  @include desktop {
+    transition-delay: 0.5s;
+    div.sun {
+      background-color: #ffc063;
+      right: 6.3px;
+      top: 5.7px;
+    }
+    div.moon {
+      border: 2px solid #ffc063;
+      width: 34px;
+      height: 34px;
+    }
+  }
 }
+
 .modeicon {
   width: 35px;
   position: relative;
