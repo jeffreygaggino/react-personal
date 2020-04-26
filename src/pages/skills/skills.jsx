@@ -20,7 +20,13 @@ class Skills extends Component {
             </p>
             <p>
               You can visit my LinkedIn down below for more details or just
-              contact me.
+              <a
+                href="mailto:jeffreygaggino@gmail.com"
+                className="contact-color"
+              >
+                &nbsp;contact me
+              </a>
+              .
             </p>
           </div>
           <div className="skills__button code">

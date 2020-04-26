@@ -9,12 +9,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
+    &:hover {
+        .burger__line-1, .burger__line-2, .burger__group > .burger__line-4, .burger__line-5 {
+            border-radius: 0 !important;
+            width: 100%;
+            transition: all .4s ease-in-out;
+        }
+
+        .burger__group > .burger__line-3{
+            width: 0;
+            border-radius: 0 !important;
+            transition: all .4s ease-in-out;
+        }
+    }
+    
     .burger__child {
         height: 4px;
         width: 100%;
         background-color: var(--about-color);
         border-radius: 10px;
         opacity: 1;
+
     }
     & > .burger__line-1 {
         width: 29px;
@@ -119,17 +135,21 @@
 
     .burger-overlay__nav {
         .nav-item {
-            font-size: 3em;
+            font-size: 3rem;
             font-weight: bold;
-            font-family: "Roboto Slab", "Courier New", Courier, monospace;
+            font-family: "Roboto Slab", Palatino, Georgia, serif;
             line-height: 1;
             text-align: center;
-            margin-bottom: 1em;
+            margin-bottom: 2rem;
             display: block;
             color: var(--body-font);
             opacity: 0;
             transition: opacity .3s ease-in;
-            
+            &:hover {
+                color: var(--contact-color);
+                font-size: 3.1rem;
+                transition: color .25s ease-in-out, font-size .25s ease-in-out;
+            }
         }
     }
 }

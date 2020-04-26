@@ -1,5 +1,4 @@
-body.dark {
-  .modeicon {
+body.dark, body.light .modeicon:hover {
     div.sun {
       background-color: #102a44;
       right: 0;
@@ -8,11 +7,17 @@ body.dark {
     div.moon {
       background-color: #364964;
       border: 2px solid #364964;
-    }
   }
 }
 
-body.light {
+body.light .modeicon:hover {
+  transition-delay: .5s;
+  div.sun {
+    background-color: #f2f2f2;
+  }
+}
+
+body.light, body.dark .modeicon:hover {
   div.sun {
     background-color: #ffc063;
     right: 6.3px;
@@ -24,10 +29,15 @@ body.light {
     height: 34px;
   }
 }
+
+body.dark .modeicon:hover {
+  transition-delay: .5s;
+}
 .modeicon {
   width: 35px;
   position: relative;
   height: 35px;
+  cursor: pointer;
   div.sun {
     position: absolute;
     width: 23px;

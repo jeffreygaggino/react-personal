@@ -9,27 +9,27 @@
     font-family: "Roboto Slab";
     font-weight: bold;
     src: local("Roboto Slab"), local("Roboto-Slab"),
-      url("../fonts/RobotoSlab-Bold.ttf");
+      url("../fonts/RobotoSlab-Bold.woff2");
   }
   @font-face {
     font-family: "Roboto Slab";
     font-weight: normal;
     src: local("Roboto Slab"), local("Roboto-Slab"),
-      url("../fonts/RobotoSlab-Regular.ttf");
+      url("../fonts/RobotoSlab-Regular.woff2");
   }
   
   @font-face {
       font-family: "Poppins";
       font-weight: bold;
-      src: local("Poppins"), url("../fonts/Poppins-Bold.ttf");
+      src: local("Poppins"), url("../fonts/Poppins-Bold.woff2");
   }
   @font-face {
       font-family: "Poppins";
       font-weight: normal;
-      src: local("Poppins"), url("../fonts/Poppins-Regular.ttf");
+      src: local("Poppins"), url("../fonts/Poppins-Regular.woff2");
   }
   @font-face {
       font-family: "Poppins";
       font-weight: 500;
-      src: local("Poppins"), url("../fonts/Poppins-Medium.ttf");
+      src: local("Poppins"), url("../fonts/Poppins-Medium.woff2");
   }

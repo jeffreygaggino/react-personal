@@ -7,19 +7,28 @@ class footer extends Component {
     return (
       <footer id="footerNav">
         <ul>
-          <li className="code contact-color">
+          <li className="code">
             <span className="codewords">
-              <a href="mailto:jeffreygaggino@gmail.com">Contact</a>
+              <a
+                className="contact-color"
+                href="mailto:jeffreygaggino@gmail.com"
+              >
+                Contact
+              </a>
             </span>
           </li>
-          <li className="code about-color">
+          <li className="code">
             <span className="codewords">
-              <Link to="/about">Who Am I?</Link>
+              <Link className="about-color" to="/about">
+                Who Am I?
+              </Link>
             </span>
           </li>
-          <li className="code skills-color">
+          <li className="code">
             <span className="codewords">
-              <Link to="/skills">Expertise</Link>
+              <Link className="skills-color" to="/skills">
+                Expertise
+              </Link>
             </span>
           </li>
         </ul>
