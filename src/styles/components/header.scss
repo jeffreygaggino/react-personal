@@ -11,7 +11,12 @@ header.headerNav {
     z-index: 2;
 
     .headerNav__mode, .headerNav__burger {
-        width: 50px;
+        width: 50px; 
+    }
+
+    .headerNav__burger {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .headerNav__wordmark {

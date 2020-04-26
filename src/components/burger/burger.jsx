@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class Burger extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="headerNav__burger">
         <div
           onClick={this.props.burgerToggle}
           className={`burger${this.props.open ? " open" : ""}`}
@@ -45,7 +45,7 @@ class Burger extends Component {
             </a>
           </div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
