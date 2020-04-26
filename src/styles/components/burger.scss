@@ -115,7 +115,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-delay: .4s;
+    transition-delay: .9s;
 
     &.open {
         opacity: 1;
@@ -123,35 +123,71 @@
         pointer-events: all;
 
         &>.burger-overlay__nav {
-
+            ul li:nth-child(1) > a.nav-item {
+                transition-delay: 0.3s;
+            }
+            ul li:nth-child(2) > a.nav-item {
+                transition-delay: 0.5s;
+            }
+            ul li:nth-child(3) > a.nav-item {
+                transition-delay: 0.7s;
+            }
+            ul li:nth-child(4) > a.nav-item {
+                transition-delay: 0.9s;
+            }
 
             
             .nav-item {
                 opacity: 1;
-                transition: opacity .4s ease-in;
-                transition-delay: .3s;
+                margin-bottom: 1rem;
+                transition: opacity .5s ease-in, margin .5s ease-in;
+                // transition-delay: .3s;
             }
         }
 
     }
-
+ 
     .burger-overlay__nav {
-        .nav-item {
-            font-size: 3rem;
-            font-weight: bold;
-            font-family: "Roboto Slab", Palatino, Georgia, serif;
-            line-height: 1;
-            text-align: center;
-            margin-bottom: 2rem;
-            display: block;
-            color: var(--body-font);
-            opacity: 0;
-            transition: opacity .3s ease-in;
-            @include desktop {
-                &:hover {
-                    color: var(--contact-color);
-                    font-size: 3.1rem;
-                    transition: color .25s ease-in-out, font-size .25s ease-in-out;
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                height: 6rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                &:nth-child(1) > a.nav-item {
+                    transition-delay: 0.6s;
+                }
+                &:nth-child(2) > a.nav-item {
+                    transition-delay: 0.4s;
+                }
+                &:nth-child(3) > a.nav-item {
+                    transition-delay: 0.2s;
+                }
+                &:nth-child(4) > a.nav-item {
+                    transition-delay: 0s;
+                }
+                .nav-item {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    font-family: "Roboto Slab", Palatino, Georgia, serif;
+                    line-height: 1;
+                    text-align: center;
+                    margin-bottom: 0;
+                    display: block;
+                    color: var(--body-font);
+                    opacity: 0;
+                    border-bottom: 0 var(--accent-color) solid;
+                    transition: color .25s ease-in-out, font-size .25s ease-in-out, opacity .2s ease-in, margin .2s ease-in, border-width .2s linear;
+                    @include desktop {
+                        &:hover {
+                            color: var(--contact-color);
+                            border-bottom: .5rem var(--contact-color) solid;
+                            font-size: 3.1rem;
+                            transition: color .25s ease-in-out, font-size .25s ease-in-out, opacity .2s ease-in, margin .2s ease-in, border-width .2s linear;
+                        }
+                    }
                 }
             }
         }

@@ -19,30 +19,44 @@ class Burger extends Component {
         </div>
         <div className={`burger-overlay${this.props.open ? " open" : ""}`}>
           <div className="burger-overlay__nav">
-            <Link onClick={this.props.burgerToggle} to="/" className="nav-item">
-              Home
-            </Link>
-            <Link
-              onClick={this.props.burgerToggle}
-              to="/about"
-              className="nav-item"
-            >
-              Who Am I?
-            </Link>
-            <Link
-              onClick={this.props.burgerToggle}
-              to="/skills"
-              className="nav-item"
-            >
-              Expertise
-            </Link>
-            <a
-              onClick={this.burgerToggle}
-              href="mailto:jeffreygaggino.com"
-              className="nav-item"
-            >
-              Contact Me
-            </a>
+            <ul>
+              <li className="burger-overlay__nav__li">
+                <Link
+                  onClick={this.props.burgerToggle}
+                  to="/"
+                  className="nav-item"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="burger-overlay__nav__li">
+                <Link
+                  onClick={this.props.burgerToggle}
+                  to="/about"
+                  className="nav-item"
+                >
+                  Who Am I?
+                </Link>
+              </li>
+              <li className="burger-overlay__nav__li">
+                <Link
+                  onClick={this.props.burgerToggle}
+                  to="/skills"
+                  className="nav-item"
+                >
+                  Expertise
+                </Link>
+              </li>
+              <li className="burger-overlay__nav__li">
+                <a
+                  onClick={this.burgerToggle}
+                  href="mailto:jeffreygaggino.com"
+                  className="nav-item"
+                >
+                  Contact Me
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
