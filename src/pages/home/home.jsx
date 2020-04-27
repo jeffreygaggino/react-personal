@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Homearrow from "./homearrow";
 import JeffreyInteractive from "../backgrounds/jeffreyinteractive/jeffreyinteractive";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
   state = {};
@@ -16,17 +17,26 @@ class Home extends Component {
           </h1>
           <div className="home__blurb">
             <p>
-              I'm <span className="about-color bold">Jeffrey</span>
+              I'm{" "}
+              <Link to="/about" className="about-color bold">
+                Jeffrey
+              </Link>
               <span className="bold punctuation">,</span>
             </p>
             <p>
-              a <span className="contact-color bold">Digital Developer</span>
+              a{" "}
+              <a
+                href="mailto:jeffreygaggino@gmail.com"
+                className="contact-color bold"
+              >
+                Digital Developer
+              </a>
               <span className="bold punctuation">.</span>
             </p>
           </div>
           <div className="home__subtitle">
             <Homearrow />
-            Front End, Email & Design
+            <Link to="/skills">Front End, Email & Design</Link>
           </div>
         </div>
       </div>

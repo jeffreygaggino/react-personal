@@ -2,7 +2,14 @@ body {
   
   #mainContent {
       #home {
+        
       --pageTheme: var(--body-font);
+      @include tablet {
+        a:hover {
+          border-bottom: .2rem currentColor solid;
+          transition: border .25s ease-in-out;
+        }
+      }
       .home__title {
         margin-top: 10px;
         margin-bottom: 2.14rem;
@@ -43,6 +50,7 @@ body {
           margin: 0;
           line-height: 150%;
         }
+ 
       }
 
       .home__subtitle {
