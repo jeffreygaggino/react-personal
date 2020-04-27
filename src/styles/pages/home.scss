@@ -2,6 +2,9 @@ body {
   
   #mainContent {
       #home {
+      .Cursor.Cursor--blinking{
+        color: var(--body-font);
+      }
       --pageTheme: var(--body-font);
       .home__title {
         margin-top: 10px;
@@ -9,15 +12,18 @@ body {
         font-weight: bold;
         font-size: 5.7rem;
         line-height: 1;
+        position: relative;
 
-        & > span {
+        & span.codewords {
           color: var(--pageTheme);
+          position: relative;
+          font-size: 5.7rem;
 
           &:before {
             content: "<h1>";
             font-size: 20px;
             left: -17px;
-            top: -5px;
+            top: 5px;
             @include desktop {
               top: 10px;
             }
@@ -25,10 +31,10 @@ body {
           &:after {
             content: "</h1>";
             font-size: 20px;
-            right: -50px;
-            bottom: 25px;
+            left: -17px;
+            bottom: 5px;
             @include desktop {
-              bottom: 37px;
+              bottom: 10px;
             }
           }
         }

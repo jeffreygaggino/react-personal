@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Homearrow from "./homearrow";
 import JeffreyInteractive from "../backgrounds/jeffreyinteractive/jeffreyinteractive";
+import Typist from "react-typist";
 
 class Home extends Component {
   state = {};
@@ -10,9 +11,19 @@ class Home extends Component {
         <JeffreyInteractive />
         <div className="content__home">
           <h1 className="home__title code">
-            <span className="codewords">
-              Hello<span className="punctuation">.</span>
-            </span>
+            <Typist
+              avgTypingDelay={150}
+              cursor={{
+                hideWhenDone: true,
+                blink: true,
+                hideWhenDoneDelay: 1000,
+              }}
+            >
+              <Typist.Delay ms={1000} />
+              <span className="codewords">
+                Hello<span className="punctuation">.</span>
+              </span>
+            </Typist>
           </h1>
           <div className="home__blurb">
             <p>
