@@ -36,7 +36,7 @@
           left: -10px;
           bottom: -15px;
         }
-        @include desktop {
+        @include tablet {
           .contact-color:hover {
             border-bottom: 2px solid var(--contact-color);
             transition: border .25s ease-in-out;

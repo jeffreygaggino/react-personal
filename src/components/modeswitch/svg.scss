@@ -3,6 +3,11 @@
       @content;
   }
 }
+@mixin tablet {
+  @media(min-width: 767px) {
+      @content;
+  }
+}
 body.dark {
   div.sun {
     background-color: #102a44;
@@ -16,7 +21,7 @@ body.dark {
 }
 
 body.light .modeicon:hover {
-  @include desktop {
+  @include tablet {
     transition-delay: 0.5s;
     div.sun {
       background-color: #f2f2f2;
@@ -44,7 +49,7 @@ body.light{
 }
 
 body.dark .modeicon:hover {
-  @include desktop {
+  @include tablet {
     transition-delay: 0.5s;
     div.sun {
       background-color: #ffc063;

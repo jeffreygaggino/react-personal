@@ -87,7 +87,7 @@
     max-height: 62px;
     max-width: 250px;
     transition: background-color .5s ease-in-out, color .5s ease-in-out, font-size .5s ease-in-out;
-    @include desktop {
+    @include tablet {
       &:hover {
         background-color: var(--pageTheme);
         color: var(--hover-color);

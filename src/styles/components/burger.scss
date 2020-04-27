@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    @include desktop {
+    @include tablet {
         &:hover {
             .burger__line-1, .burger__line-2, .burger__group > .burger__line-4, .burger__line-5 {
                 border-radius: 0 !important;
@@ -147,7 +147,7 @@
                     transition-delay: 0;
                 }
             }
-            @include desktop {
+            @include tablet {
                 ul li > a.nav-item:hover {
                     color: var(--contact-color);
                     border-bottom: .5rem var(--contact-color) solid;
