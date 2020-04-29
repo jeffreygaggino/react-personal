@@ -1,4 +1,5 @@
 body {
+
   #skills-interactive {
     position: absolute;
     width: 100%;
@@ -16,8 +17,8 @@ body {
     }
     &__svg {
       position: absolute;
-      left: calc(40vw);
-      top: 20%;
+      left: calc(34vw);
+      top: calc(100px + 4vh);
       width: calc(60vh - 15vw);
       @include smallscreen {
         width: calc(55vh - 15vw);
@@ -29,9 +30,6 @@ body {
         top: 10%;
       }
 
-      @include desktop {
-
-      }
     }
     > svg path {
       transition: fill-opacity 1s ease-in-out, opacity 1s ease-out, stroke-width 0.25s ease-in-out, stroke-color 1s ease-out;
@@ -62,11 +60,16 @@ body {
     &__svg {
       position: absolute;
       left: calc(50vw);
-      bottom: 5%;
+      bottom: 9%;
       width: calc(40vh - 15vw);
+
+      @include smallscreen {
+        bottom: 12%;
+      }
       @include tablet {
         width: 40vh;
         left: 55vw;
+        bottom: 25%;
       }
 
       @include desktop {
@@ -74,6 +77,19 @@ body {
         position: static;
       }
     }
+  }
+  #jeffrey-interactive, #skills-interactive {
+    @include desktop {
+      position: static;
+    width: auto;
+  }
+
+  &__svg {
+
+    @include desktop {
+      position: static;
+    }
+  }
   }
   &.dark {
     #jeffrey-interactive,#skills-interactive > svg path {
@@ -108,10 +124,12 @@ body {
 
 
     #jeffrey-interactive, #skills-interactive {
-    opacity: 0.3;
-    @include tablet {
-      opacity: 0.7;
-    }
+
+      opacity: 0.3;
+      @include tablet {
+        opacity: 0.7;
+      }
+     
     // jeffrey interactive
       path.lefthand {
         fill: var(--skin);
