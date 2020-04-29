@@ -13,6 +13,7 @@ function Main({ location }) {
         key={location.key}
         timeout={{ enter: 250, exit: 250 }}
         classNames={"fade"}
+        appear
       >
         <Switch location={location}>
           <Route exact path="/" component={Home} />
