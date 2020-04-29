@@ -32,6 +32,13 @@
       margin-bottom: 3.5rem;
       @include tablet {
         max-width: 320px;
+        a.contact-color{
+          transition: border .25s ease-in-out;
+          &:hover {
+          border-bottom: 2px solid var(--contact-color);
+          
+        }
+      }
       }
       @include desktop {
         max-width: 600px;

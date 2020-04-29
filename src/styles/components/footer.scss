@@ -3,7 +3,7 @@
   min-width: 250px;
   align-self: center;
   width: 100%;
-  margin-bottom: 20px;
+  height: 2.5rem;
   @include desktop {
     max-width: 500px;
   }
@@ -25,16 +25,25 @@
         &:before,
         &:after {
           text-transform: initial;
+          font-size:1.1rem;
+          z-index: -1;
+          line-height: 1;
         }
         &:before {
           left: -10px;
           top: -15px;
           content: "<a>";
+          @include desktop {
+            top: -20px;
+          }
         }
         &:after {
           content: "</a>";
           left: -10px;
           bottom: -15px;
+          @include desktop {
+            bottom: -20px;
+          }
         }
         @include tablet {
           .contact-color:hover {

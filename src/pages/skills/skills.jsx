@@ -19,12 +19,13 @@ class Skills extends Component {
               supporting frameworks of React and Vue.
             </p>
             <p>
-              You can visit my LinkedIn down below for more details or just
+              You can visit my LinkedIn down below for more details or
+              just&nbsp;
               <a
                 href="mailto:jeffreygaggino@gmail.com"
                 className="contact-color"
               >
-                &nbsp;contact me
+                contact me
               </a>
               .
             </p>

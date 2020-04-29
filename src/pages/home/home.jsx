@@ -36,7 +36,7 @@ class Home extends Component {
           </div>
           <div className="home__subtitle">
             <Homearrow />
-            <Link to="/skills">Front End, Email & Design</Link>
+            <Link to="/skills">Design, Front-End & Email</Link>
           </div>
         </div>
       </div>
