@@ -3,19 +3,18 @@
     --pageTheme: var(--skills-color);
     .title {
       & > span.codewords {
+        display: inline-block;
+        &:before {
+          top: -20px;
+        }
         &:after {
           content: "</h1>";
           font-size: 20px;
-          bottom: -40px;
-          right: -100px;
-          @include smallscreen {
-            bottom: -33px;
-            right: -99px;
-          }
+          right: -50px;
+          bottom: 5px;
 
           @include desktop {
-            bottom: -54px;
-            right: -120px;
+            bottom: 10px;
           }
         }
       }
