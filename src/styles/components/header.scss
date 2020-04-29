@@ -9,6 +9,9 @@ header.headerNav {
     justify-content: space-between;
     padding: 0 20px;
     z-index: 2;
+    .isActive {
+        border: none;
+    }
 
     .headerNav__mode, .headerNav__burger {
         width: 50px; 

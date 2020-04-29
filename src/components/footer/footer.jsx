@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class footer extends Component {
   state = {};
@@ -11,6 +11,7 @@ class footer extends Component {
             <span className="codewords">
               <a
                 className="contact-color"
+                activeClassName="isActive"
                 href="mailto:jeffreygaggino@gmail.com"
               >
                 Contact
@@ -19,16 +20,24 @@ class footer extends Component {
           </li>
           <li className="code">
             <span className="codewords">
-              <Link className="about-color" to="/about">
+              <NavLink
+                className="about-color"
+                activeClassName="isActive"
+                to="/about"
+              >
                 Who Am I?
-              </Link>
+              </NavLink>
             </span>
           </li>
           <li className="code">
             <span className="codewords">
-              <Link className="skills-color" to="/skills">
+              <NavLink
+                className="skills-color"
+                activeClassName="isActive"
+                to="/skills"
+              >
                 Expertise
-              </Link>
+              </NavLink>
             </span>
           </li>
         </ul>

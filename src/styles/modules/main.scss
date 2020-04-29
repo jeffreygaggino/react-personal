@@ -42,6 +42,12 @@
   }
 }
 
+.isActive {
+  pointer-events: none;
+  border-bottom: 2px solid currentColor;
+  transition: border .25s ease-in;
+}
+
 .content {
   @include tablet {
     padding-left: 10%;

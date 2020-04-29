@@ -4,7 +4,11 @@ import JeffreyInteractive from "../backgrounds/jeffreyinteractive/jeffreyinterac
 import { Link } from "react-router-dom";
 
 class Home extends Component {
-  state = {};
+  state = {
+    firstTime: false,
+  };
+
+  firstentry = () => {};
   render() {
     return (
       <div id="home" className="content">
