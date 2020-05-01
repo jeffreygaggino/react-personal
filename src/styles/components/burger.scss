@@ -115,36 +115,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-delay: .9s;
+    transition-delay: 0.9s;
 
     &.open {
         opacity: 1;
-        transition: all .3s ease-out;
+        transition: all 0.3s ease-out;
         pointer-events: all;
 
         &>.burger-overlay__nav {
             ul li:nth-child(1) > a.nav-item {
                 transition-delay: 0.3s;
                 &:hover {
-                    transition-delay: 0;
+                    transition-delay: 0.0001s;
                 }
             }
             ul li:nth-child(2) > a.nav-item {
                 transition-delay: 0.5s;
                 &:hover {
-                    transition-delay: 0;
+                    transition-delay: 0.0001s;
                 }
             }
             ul li:nth-child(3) > a.nav-item {
                 transition-delay: 0.7s;
                 &:hover {
-                    transition-delay: 0;
+                    transition-delay: 0.0001s;
                 }
             }
             ul li:nth-child(4) > a.nav-item {
                 transition-delay: 0.9s;
                 &:hover {
-                    transition-delay: 0;
+                    transition-delay: 0.0001s;
                 }
             }
             @include tablet {
@@ -185,7 +185,7 @@
                     transition-delay: 0.2s;
                 }
                 &:nth-child(4) > a.nav-item {
-                    transition-delay: 0s;
+                    transition-delay: 0.0001s;
                 }
                 a.nav-item {
                     text-align: center;
