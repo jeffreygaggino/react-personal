@@ -32,7 +32,7 @@
         font-family: "Roboto Slab", Palatino, Georgia, serif;
       }
 
-      .contact__form-field, input:-internal-autofill-selected {
+      .contact__form-field {
         background-color: transparent;
         border: 2px solid var(--about-color);
         font-size: 1.4rem;
