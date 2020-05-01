@@ -26,8 +26,7 @@ body {
       }
       @include tablet {
         width: 50vh;
-        left: 55vw;
-        top: 10%;
+        position: static;
       }
 
     }
@@ -59,9 +58,10 @@ body {
 
     &__svg {
       position: absolute;
-      left: calc(50vw);
-      bottom: 9%;
-      width: calc(40vh - 15vw);
+      right: -10%;
+      bottom: calc(20vh - 80px);
+      width: calc(40vh - 50px);
+      padding-bottom: 20px;
 
       @include smallscreen {
         bottom: 12%;
@@ -70,6 +70,7 @@ body {
         width: 40vh;
         left: 55vw;
         bottom: 25%;
+        padding-bottom: 0;
       }
 
       @include desktop {
