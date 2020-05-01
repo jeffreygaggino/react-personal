@@ -22,13 +22,23 @@ export default class MyForm extends React.Component {
           action="https://formspree.io/xrgyzwzk"
           method="POST"
         >
-          <label>Email:</label>
-          <input className="contact__form-field" type="email" name="email" />
-          <label>Message:</label>
+          <label>
+            Email: <span className="skills-color">*</span>
+          </label>
+          <input
+            className="contact__form-field"
+            type="email"
+            name="email"
+            required
+          />
+          <label>
+            Message: <span className="skills-color">*</span>
+          </label>
           <textarea
             className="contact__form-field"
             type="text"
             name="message"
+            required
           />
           <div id="contact-form-button" className="code">
             {status === "SUCCESS" ? (
