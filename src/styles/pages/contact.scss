@@ -43,10 +43,13 @@
       }
 
       textarea{
-          height: 250px;
+          height: 20vh;
+          @include tablet {
+              height: 250px;
+          }
       }
       &-button {
-        margin-top: 50px;
+        margin-top: 3.5rem;
         margin-bottom: 3rem;
       }
       p.errorMsg {
