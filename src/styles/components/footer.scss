@@ -62,6 +62,11 @@
             border-bottom: 2px solid var(--about-color);
             transition: border .25s ease-in-out;
           }
+          .contact-color:hover {
+            border-bottom: 2px solid var(--contact-color);
+            transition: border .25s ease-in-out;
+          }
+
         }
       }
     }

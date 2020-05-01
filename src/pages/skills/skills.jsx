@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import SkillInteractive from "../backgrounds/skillsinteractive/skillsinteractive";
 
 class Skills extends Component {
@@ -21,12 +22,9 @@ class Skills extends Component {
             <p>
               You can visit my LinkedIn down below for more details or
               just&nbsp;
-              <a
-                href="mailto:jeffreygaggino@gmail.com"
-                className="contact-color"
-              >
+              <Link to="/contact" className="contact-color">
                 contact me
-              </a>
+              </Link>
               .
             </p>
           </div>

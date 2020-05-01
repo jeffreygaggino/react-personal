@@ -48,13 +48,13 @@ class Burger extends Component {
                 </Link>
               </li>
               <li className="burger-overlay__nav__li">
-                <a
-                  onClick={this.burgerToggle}
-                  href="mailto:jeffreygaggino.com"
+                <Link
+                  onClick={this.props.burgerToggle}
+                  to="/contact"
                   className="nav-item"
                 >
                   Contact Me
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

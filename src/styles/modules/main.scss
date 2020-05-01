@@ -23,7 +23,7 @@
       opacity: 1;
     }
   }
-  &>#skills,#home,#about {
+  &>#skills,#home,#about,#contact {
     
     position: absolute;
     width: 100%;
@@ -59,11 +59,13 @@
 
 .content {
   @include tablet {
-    padding-left: 10%;
-    padding-top: 20%;
+    // padding-left: 10%;
+    // padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
   }
   @include desktop {
-    display: flex;
     max-width: 1100px;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -114,8 +116,9 @@
   }
 }
 .code {
-  a.box-button.codewords {
+  a.box-button.codewords, button.box-button.codewords  {
     border: 2px solid var(--pageTheme);
+    background-color: unset;
     color: var(--pageTheme);
     display: flex;
     justify-content: center;

@@ -9,13 +9,13 @@ class footer extends Component {
         <ul>
           <li className="code">
             <span className="codewords">
-              <a
+              <NavLink
                 className="contact-color"
                 activeClassName="isActive"
-                href="mailto:jeffreygaggino@gmail.com"
+                to="/contact"
               >
                 Contact
-              </a>
+              </NavLink>
             </span>
           </li>
           <li className="code">

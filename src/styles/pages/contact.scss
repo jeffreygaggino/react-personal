@@ -1,0 +1,61 @@
+#mainContent {
+  #contact {
+    width: calc(100% - 60px);
+    --pageTheme: var(--contact-color);
+    @include desktop {
+        flex-direction: row;
+        width: 100%;
+    }
+    .title {
+        @include tablet {
+            width: 100%;
+        }
+
+        @include desktop {
+            width: 40%;
+        }
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      @include desktop {
+          width: 60%;
+      }
+      label {
+        color: var(--contact-color);
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        font-family: "Roboto Slab", Palatino, Georgia, serif;
+      }
+
+      .contact__form-field, input:-internal-autofill-selected {
+        background-color: transparent;
+        border: 2px solid var(--about-color);
+        font-size: 1.4rem;
+      }
+      input[type="email"], textarea {
+        color: var(--contact-color);
+        width:100%;
+      }
+
+      textarea{
+          height: 250px;
+      }
+      &-button {
+        margin-top: 50px;
+        margin-bottom: 3rem;
+      }
+      p.errorMsg {
+        font-family: "Caveat", "Lucida Handwriting", cursive;
+        color: var(--skills-color);
+        font-size: 1.1rem;
+        margin: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
