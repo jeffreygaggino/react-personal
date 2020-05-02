@@ -23,7 +23,7 @@ body {
         width: calc(55vh - 15vw);
         top: 24%;
       }
-      @include tablet {
+      @include desktop {
         width: 50vh;
         position: static;
       }
