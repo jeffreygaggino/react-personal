@@ -26,12 +26,9 @@ class Home extends Component {
             </p>
             <p>
               a{" "}
-              <a
-                href="mailto:jeffreygaggino@gmail.com"
-                className="contact-color bold"
-              >
+              <Link to="/contact" className="contact-color bold">
                 Digital Developer
-              </a>
+              </Link>
               <span className="bold punctuation">.</span>
             </p>
           </div>
