@@ -3,7 +3,7 @@
     --smallwidth: 8px;
     --speed: 0.4s;
     --delay: 0.3s;
-    --othertransition: opacity calc(var(--speed)) ease-in, width calc(var(--speed)/2) ease-in;
+    --othertransition: opacity calc(var(--speed)) ease-in, width calc(var(--speed)/2) ease-in, background-color .15s ease-in-out;
     width: 35px;
     height: 30px;
     display: flex;
