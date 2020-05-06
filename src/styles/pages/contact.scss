@@ -27,7 +27,8 @@
       label {
         color: var(--contact-color);
         margin-top: 1rem;
-        font-size: 1.4rem;
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
         line-height: 1.5;
         font-family: "Roboto Slab", Palatino, Georgia, serif;
         &:first-child {
@@ -39,9 +40,15 @@
         background-color: transparent;
         border: 2px solid var(--about-color);
         font-size: 1.4rem;
+        transition: border .25s ease-in;
+        padding: 7px 10px;
+        text-decoration: none;
+        font-family: "Roboto Slab", Palatino, Georgia, serif;
+        &:focus {
+          border: 2px solid var(--contact-color);
+        }
       }
       input[type="email"] {
-        height: 40px;
       }
       input[type="email"], textarea {
         color: var(--contact-color);
