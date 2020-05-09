@@ -12,7 +12,7 @@ function Main({ location }) {
     <TransitionGroup id="mainContent">
       <CSSTransition
         key={location.key}
-        timeout={{ enter: 250, exit: 250 }}
+        timeout={{ enter: 1250, exit: 750 }}
         classNames={"fade"}
         appear
       >

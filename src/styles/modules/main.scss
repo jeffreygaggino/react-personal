@@ -14,12 +14,12 @@
     justify-content: center;
 
   }
-  &>#home {
+  &>#home,#about,#contact,#skills {
     &.fade-appear {
-      opacity: 0.01;
+      opacity: 0;
     }
     &.fade-appear-done {
-      transition: opacity 500ms ease-in;
+      transition: opacity 1000ms ease-in;
       opacity: 1;
     }
   }
@@ -31,22 +31,25 @@
     margin: 0 25px;
 
     &.fade-enter {
-        opacity: 0.01;
+        opacity: 0;
+        transition: opacity 500ms ease-in;
+        transition-delay: 750ms;
     }
     
-    &.fade-enter.fade-enter-active {
+    &.fade-enter-active {
         opacity: 1;
-        transition: opacity 250ms ease-in;
-        transition-delay: 250ms;
+        // transition: opacity 500ms ease-in;
+        // transition-delay: 500ms;
     }
     
     &.fade-exit {
         opacity: 1;
+        transition: opacity 750ms ease-in;
     }
     
-    &.fade-exit.fade-exit-active {
-        opacity: 0.01;
-        transition: opacity 250ms ease-in;
+    &.fade-exit-active {
+        opacity: 0;
+        // transition: opacity 1000ms ease-in;
     }
   }
 }
